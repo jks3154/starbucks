@@ -1,19 +1,3 @@
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input')
-
-searchEl.addEventListener('click',function () {
-searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-});
-searchInputEl.addEventListener('blur',function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-});
-
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top'); //#to-top인 특정한 요소를 찾아서 toTopEl 변수에 할당
 
@@ -142,9 +126,4 @@ new ScrollMagic
 })
 .setClassToggle(spyEl, 'show') //(토글할요소, 토글할 이름)
 .addTo(new ScrollMagic.Controller()); //스크롤 매직에서 내부의 컨트롤러에 데이터를 할당하여 동작하게 해줌.
-})
-
-const thisYear = document.querySelector('.this-year');//클레스 요소를 찾아서
-thisYear.textContent = new Date().getFullYear(); //2021
-
-//javascript 생성자 함수 date() //요소가 가지고 있는 글자 내용들의 값을 알거나 지정할 수 있다.
+});
