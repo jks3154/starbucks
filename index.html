@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starbucks Coffee Korea</title>
 
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
-  <meta property="twitter:url" content="https://starbucks.co.kr" />
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Starbucks" />
+  <meta property="og:title" content="Starbucks Coffee Korea" />
+  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="https://starbucks.co.kr" />
 
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="Starbucks" />
   <meta property="twitter:title" content="Starbucks Coffee Korea" />
@@ -26,6 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/main.css" />
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -39,13 +44,15 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
-  <!-- Youtube -->
-  <script defer src="./js/youtube.js"></script>
-
   <!-- Scroll Magic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- Youtube -->
+  <script defer src="./js/youtube.js"></script>
+
+  <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>
+
 </head>
 <body>
 
@@ -58,7 +65,7 @@
     <div class="sub-menu">
       <ul class="menu">
         <li>
-          <a href="/signin">Sign In</a>
+          <a href="/signin/i">Sign In</a>
         </li>
         <li>
           <a href="javascript:void(0)">My Starbucks</a>
